@@ -1,54 +1,92 @@
-# Ahmed Hamdi — Software Engineer & Creative Developer
+# Ahmed Hamdi — Automation & Software Developer
+# أحمد حمدي — مطور برمجيات و أتمتة
 
-Professional focus on backend automation, cross-platform mobile solutions, and interactive web architecture.
-
----
-
-## Technical Expertise
-
-### Backend & Process Automation (Python)
-- Architecting robust automation frameworks for real-time data processing and system monitoring.
-- Implementing persistent state management using SQLite for high-uptime applications.
-- Advanced media manipulation and batch processing pipelines utilizing Pillow and NumPy.
-- Integration of state-of-the-art AI models including Gemini and Llama via Groq API.
-
-### Mobile & Web Development
-- Full-stack web development (HTML5, CSS3, JavaScript) with a focus on performance-optimized, single-file architectures.
-- Android application development specializing in Sketchware Pro with custom Java implementation.
-- Real-time cloud integration using Firebase (Firestore & Realtime Database) for synchronized data environments.
-- Secure data handling using industry-standard encryption protocols (AES-256).
-
-### Digital Production & Post-Processing
-- Professional video editing and technical motion graphics for digital content.
-- Designing immersive user interfaces with a focus on dark-mode and neon-minimalist aesthetics.
+I help Tunisian businesses save time, reduce manual work, and increase productivity using smart automation tools and custom-built solutions.  
+أساعد الشركات في تونس على توفير الوقت وتقليل العمل اليدوي وزيادة الإنتاجية عبر الأتمتة الذكية.
 
 ---
 
-## Featured Project Portfolio
+## 🔥 خدمات مطلوبة حاليًا | High-Demand Services
 
-### AI-Driven Communication Systems
-A sophisticated Telegram integration featuring a custom-built logic engine for natural language interaction and long-term memory persistence.
-- **Core Technology:** Python, Groq API, SQLite.
+### ⚙️ Automation & Business Tools | أتمتة الأعمال
+- Automate repetitive tasks (data entry, reports, messaging)  
+  أتمتة المهام المتكررة (إدخال بيانات، تقارير، رسائل)
 
-### Technical Tooling for Android
-A terminal-based media utility designed for efficient resource management on mobile environments, featuring a responsive CLI.
-- **Core Technology:** Python, Rich Library, Termux.
+- Smart Telegram & WhatsApp bots for:
+  - Customer support  
+  - Auto replies  
+  - Order handling  
+  - Notifications  
 
-### Real-Time Monitoring Solutions
-A cloud-synced dashboard for monitoring database health and system status with automated alerting mechanisms.
-- **Core Technology:** Firebase Admin SDK, Python, Telegram API.
+  بوتات تلغرام وواتساب لخدمة الحرفاء والرد الآلي وإدارة الطلبات
 
-### Interactive Web Experiences
-Development of narrative-driven web applications using advanced JavaScript for animated sequences and logical branching.
-- **Core Technology:** HTML5, CSS3, JavaScript.
+- Connect your tools together (APIs)  
+  ربط الأنظمة مع بعضها (مثلاً: Google Sheets + Telegram)
+
+---
+
+### 🌐 Web & Digital Solutions | حلول رقمية
+- Fast business websites (landing pages)  
+  مواقع سريعة لعرض خدماتك
+
+- Simple web apps to manage your work  
+  تطبيقات ويب بسيطة لتنظيم عملك
+
+- Android apps (WebView or custom tools)  
+  تطبيقات أندرويد
 
 ---
 
-## Contact & Portfolio
+## 💼 Ready Projects (Live Demos) | مشاريع جاهزة
 
-Open for collaboration on technical automation, mobile development, and creative digital projects.
+✔️ Telegram Auto-Reply Bot  
+✔️ WhatsApp Business Bot  
+✔️ Business Landing Page  
+✔️ Automation Scripts (Python)
 
-[Explore My Official Portfolio](https://your-website-link.com)
+(Demos available on request)  
+(نماذج جاهزة عند الطلب)
 
 ---
-*Focusing on building scalable, efficient, and secure software solutions.*
+
+## 🚀 Why This Matters | لماذا هذا مهم؟
+
+- Save hours of manual work  
+  توفير ساعات من العمل اليدوي
+
+- Faster response to customers  
+  رد أسرع للحرفاء
+
+- Better organization for your business  
+  تنظيم أفضل للعمل
+
+---
+
+## 🤝 Looking to Work With | أبحث عن العمل مع
+
+- Startups  
+- Small & Medium Businesses  
+
+الشركات الناشئة والصغيرة والمتوسطة في تونس
+
+---
+
+## 💳 Payment | الدفع
+
+- 🇹🇳 Tunisia only  
+- Payment via Flouci  
+
+---
+
+## 📩 Contact Me | تواصل معي
+
+📱 WhatsApp: 22490771  
+💬 Available anytime  
+
+راسلني مباشرة ونفهمو مشروعك 🚀
+
+---
+
+## 🔗 Projects & Portfolio
+
+(سيتم عرض المشاريع قريبًا على الموقع)
