@@ -1,92 +1,73 @@
-# Ahmed Hamdi — Automation & Software Developer
-# أحمد حمدي — مطور برمجيات و أتمتة
+# Ahmed Hamdi — مطور برمجيات وأتمتة
 
-I help Tunisian businesses save time, reduce manual work, and increase productivity using smart automation tools and custom-built solutions.  
-أساعد الشركات في تونس على توفير الوقت وتقليل العمل اليدوي وزيادة الإنتاجية عبر الأتمتة الذكية.
+> أساعد الشركات الناشئة والصغيرة والمتوسطة في تونس على توفير الوقت، تقليل العمل اليدوي، وزيادة الإنتاجية — عبر أدوات أتمتة ذكية وحلول برمجية مخصصة.
 
----
-
-## 🔥 خدمات مطلوبة حاليًا | High-Demand Services
-
-### ⚙️ Automation & Business Tools | أتمتة الأعمال
-- Automate repetitive tasks (data entry, reports, messaging)  
-  أتمتة المهام المتكررة (إدخال بيانات، تقارير، رسائل)
-
-- Smart Telegram & WhatsApp bots for:
-  - Customer support  
-  - Auto replies  
-  - Order handling  
-  - Notifications  
-
-  بوتات تلغرام وواتساب لخدمة الحرفاء والرد الآلي وإدارة الطلبات
-
-- Connect your tools together (APIs)  
-  ربط الأنظمة مع بعضها (مثلاً: Google Sheets + Telegram)
+> I help Tunisian startups and SMEs save time, eliminate repetitive work, and grow — through smart automation tools and custom-built software.
 
 ---
 
-### 🌐 Web & Digital Solutions | حلول رقمية
-- Fast business websites (landing pages)  
-  مواقع سريعة لعرض خدماتك
+## الخدمات | Services
 
-- Simple web apps to manage your work  
-  تطبيقات ويب بسيطة لتنظيم عملك
+### أتمتة الأعمال | Business Automation
 
-- Android apps (WebView or custom tools)  
-  تطبيقات أندرويد
+- أتمتة المهام المتكررة: إدخال البيانات، التقارير، والإشعارات التلقائية
+- بوتات تيليجرام وواتساب: خدمة عملاء، رد آلي، إدارة طلبات، إشعارات
+- ربط الأنظمة عبر APIs (مثال: Google Sheets + Telegram + أي خدمة خارجية)
 
 ---
 
-## 💼 Ready Projects (Live Demos) | مشاريع جاهزة
+### حلول الويب والأندرويد | Web & Mobile
 
-✔️ Telegram Auto-Reply Bot  
-✔️ WhatsApp Business Bot  
-✔️ Business Landing Page  
-✔️ Automation Scripts (Python)
-
-(Demos available on request)  
-(نماذج جاهزة عند الطلب)
+- مواقع إلكترونية سريعة لعرض الخدمات (Landing Pages)
+- تطبيقات ويب لتنظيم وإدارة الأعمال
+- تطبيقات أندرويد (WebView أو حلول مخصصة)
 
 ---
 
-## 🚀 Why This Matters | لماذا هذا مهم؟
+### أدوات بايثون | Python Tools
 
-- Save hours of manual work  
-  توفير ساعات من العمل اليدوي
-
-- Faster response to customers  
-  رد أسرع للحرفاء
-
-- Better organization for your business  
-  تنظيم أفضل للعمل
+- سكربتات تنظيم ومعالجة البيانات
+- أتمتة ملفات Excel و CSV
+- توليد تقارير تلقائية
 
 ---
 
-## 🤝 Looking to Work With | أبحث عن العمل مع
+## نماذج الأعمال | Portfolio
 
-- Startups  
-- Small & Medium Businesses  
-
-الشركات الناشئة والصغيرة والمتوسطة في تونس
-
----
-
-## 💳 Payment | الدفع
-
-- 🇹🇳 Tunisia only  
-- Payment via Flouci  
+| المشروع | الوصف | الحالة |
+|---|---|---|
+| Telegram Auto-Reply Bot | بوت رد آلي متكامل لخدمة العملاء | متاح عند الطلب |
+| WhatsApp Business Bot | بوت واتساب لإدارة الطلبات والإشعارات | متاح عند الطلب |
+| Business Landing Page | موقع عرض خدمات احترافي | [عرض مباشر](./Corporate.html) |
+| Python Automation Scripts | أدوات أتمتة ومعالجة البيانات | [استعراض](./python.html) |
 
 ---
 
-## 📩 Contact Me | تواصل معي
+## لماذا الأتمتة؟ | Why Automate?
 
-📱 WhatsApp: 22490771  
-💬 Available anytime  
-
-راسلني مباشرة ونفهمو مشروعك 🚀
+- **توفير الوقت** — ساعات من العمل اليدوي يؤديها البوت في ثوانٍ
+- **رد أسرع** — عملاؤك يحصلون على ردود فورية دون انتظار
+- **تنظيم أفضل** — بيانات منظمة وتقارير تلقائية دون جهد إضافي
+- **تكلفة أقل** — استبدال مهام متكررة بأدوات آلية بسيطة وفعّالة
 
 ---
 
-## 🔗 Projects & Portfolio
+## من أنا | About Me
 
-(سيتم عرض المشاريع قريبًا على الموقع)
+مطور مستقل أعمل بمفردي، متخصص في الأتمتة وتطوير البرمجيات للسوق التونسي.
+أبحث عن فرص عمل أو تعاون مع الشركات الناشئة والمتوسطة والمتقدمة في تونس.
+
+---
+
+## الدفع | Payment
+
+- السوق المستهدف: تونس حصراً
+- طريقة الدفع: تطبيق **Flouci** فقط
+
+---
+
+## التواصل | Contact
+
+للتباحث في مشروع أو فرصة عمل، تواصل مباشرة عبر واتساب:
+
+**WhatsApp: 22490771**
