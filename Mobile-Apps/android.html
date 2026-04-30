@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيقات الأندرويد | أحمد حمدي</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #e6edf3;
+            --text-muted: #8b949e;
+            --accent-color: #3fb950; /* Android Green */
+            --border-color: #30363d;
+            --warning-color: #d29922;
+            --wa-color: #25d366;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .android-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        h1 { color: var(--accent-color); font-size: 2.2rem; margin-bottom: 10px; }
+
+        .app-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .app-title { font-size: 1.8rem; font-weight: bold; margin-bottom: 15px; }
+
+        .description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--accent-color);
+            color: #000;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(63, 185, 80, 0.4);
+        }
+
+        .warning-box {
+            background-color: rgba(210, 153, 34, 0.1);
+            border: 1px solid var(--warning-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: right;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .warning-icon { font-size: 1.5rem; }
+
+        .warning-text { font-size: 0.95rem; color: #f0e6d2; }
+
+        .contact-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: var(--wa-color);
+            color: white;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="android-icon">🤖</div>
+        <h1>تطوير تطبيقات الأندرويد</h1>
+        <p style="color: var(--text-muted);">حلول برمجية مخصصة للهواتف الذكية</p>
+    </header>
+
+    <div class="app-card">
+        <div class="app-title">Exemple App v1.0</div>
+        <p class="description">
+            هذا التطبيق مخصص للعرض فقط كمثال حي على قدرات التطوير وتصميم الواجهات. 
+            يوضح هذا النموذج مدى سلاسة الأداء والتوافق مع أنظمة الأندرويد المختلفة.
+        </p>
+
+        <a href="Mobile-Apps/Exemple.apk" class="download-btn" download>تنزيل التطبيق (APK)</a>
+
+        <div class="warning-box">
+            <div class="warning-icon">⚠️</div>
+            <div class="warning-text">
+                <strong>تنبيه الأمان:</strong> عند محاولة تثبيت التطبيق، قد يظهر لك تحذير من "Google Play Protect". 
+                هذا أمر طبيعي لأن التطبيق يتم تثبيته من خارج متجر قوقل بلاي (تثبيت خارجي). 
+                التطبيق آمن تماماً، ويمكنك المتابعة بالضغط على "التثبيت على أي حال" (Install anyway).
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h3>هل ترغب في تحويل فكرتك إلى تطبيق حقيقي؟</h3>
+        <p style="color: var(--text-muted);">نقوم بتطوير تطبيقات مخصصة تلبي احتياجات مشروعك بدقة.</p>
+        <a href="https://wa.me/21622490771" class="btn-whatsapp">تواصل معي الآن</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 أحمد حمدي | مبرمج تطبيقات أندرويد وأتمتة</p>
+    </footer>
+</div>
+
+</body>
+</html>
