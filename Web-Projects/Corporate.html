@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Automation Solutions | Ahmed Hamdi</title>
+    <style>
+        /* ── المتغيرات والألوان (تم الحفاظ عليها وتحسينها) ── */
+        :root {
+            --primary: #0a192f; /* كحلي غامق جداً للمؤسسات */
+            --secondary: #112240; /* أفتح قليلاً للبطاقات */
+            --accent: #25d366; /* أخضر واتساب نشط */
+            --text-main: #e6edf3;
+            --text-muted: #8b949e;
+            --bg-dark: #010409;
+            --border: #30363d;
+        }
+
+        /* ── التنسيق العام ── */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: var(--bg-dark); 
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        /* ── الهيدر (Hero Section) المطوّر بالصور ── */
+        header { 
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(1, 4, 9, 0.95)), 
+                        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop'); /* صورة اجتماعات عمل احترافية */
+            background-size: cover;
+            background-position: center;
+            color: white; 
+            padding: 150px 20px; 
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 { font-size: 3rem; margin-bottom: 20px; font-weight: 800; letter-spacing: -1px; }
+        header p { font-size: 1.3rem; color: var(--text-muted); max-width: 750px; margin: 0 auto; font-weight: 400; }
+
+        /* ── قسم الخدمات ── */
+        .section-title { text-align: center; margin: 80px 0 50px; font-size: 2.2rem; color: var(--text-main); font-weight: 700; }
+        
+        .service-section { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 40px; 
+            padding: 0 10%; 
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .card { 
+            background-color: var(--secondary); 
+            border-radius: 16px; 
+            overflow: hidden; /* لقص الصورة الزائدة */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border-color: var(--text-muted);
+        }
+
+        /* صور داخل البطاقات */
+        .card-img {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card-content { padding: 30px; flex-grow: 1; }
+        .card h3 { color: var(--text-main); margin-bottom: 15px; font-size: 1.6rem; font-weight: 600; }
+        .card p { color: var(--text-muted); font-size: 1rem; font-weight: 400; }
+
+        /* ── قسم التوافقية ── */
+        .compatibility-box {
+            background-color: var(--secondary);
+            margin-top: 100px;
+            padding: 80px 10%;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .comp-grid {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .comp-item { max-width: 250px; background: var(--bg-dark); padding: 20px; border-radius: 8px; border: 1px solid var(--border);}
+        .comp-item strong { display: block; font-size: 1.3rem; color: var(--accent); margin-bottom: 10px; }
+        .comp-item span { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* ── زر الاتصال والملاحظة المهنية ── */
+        .cta-container { text-align: center; padding: 100px 20px; background-color: var(--bg-dark); }
+        .btn-contact { 
+            display: inline-flex; 
+            align-items: center;
+            gap: 10px;
+            padding: 20px 50px; 
+            background: var(--accent); 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-size: 1.3rem; 
+            font-weight: 700; 
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+            transition: all 0.3s ease;
+        }
+        .btn-contact:hover { 
+            transform: scale(1.03); 
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
+        }
+
+        .disclaimer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+        }
+
+        /* ── فوتر ── */
+        footer { background: var(--bg-dark); color: var(--text-muted); padding: 50px 20px; text-align: center; border-top: 1px solid var(--border); }
+
+        /* ── تجاوب الشاشة ── */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+            .service-section { padding: 0 20px; gap: 30px; }
+            .comp-grid { gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>حلول برمجية مستقرة للأعمال</h1>
+        <p>نعمل على دمج التقنيات الحديثة في بيئة عملك لتعزيز الكفاءة التشغيلية وضمان استمرارية الخدمات بأمان.</p>
+    </header>
+
+    <h2 class="section-title">مجالات التركيز الأساسية</h2>
+    <div class="service-section">
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop');"></div> /* صورة تحليل بيانات ورسوم بيانية */
+            <div class="card-content">
+                <h3>أتمتة وإدارة البيانات</h3>
+                <p>بناء أنظمة لتنظيم ومعالجة البيانات الضخمة، مما يقلل التدخل اليدوي ويساعد في تقديم رؤى واضحة لدعم القرار.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop');"></div> /* صورة حماية وأمن سيبراني */
+            <div class="card-content">
+                <h3>تعزيز أمان الأنظمة</h3>
+                <p>تطبيق معايير أمنية متوازنة لحماية البنية التحتية البرمجية وسد الثغرات المحتملة، مع التركيز على استقرار الخدمة.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop');"></div> /* صورة تخطيط استراتيجي واستشارة */
+            <div class="card-content">
+                <h3>الدعم والاستشارة التقنية</h3>
+                <p>تقديم تحليل فني محايد لمتطلبات مشروعك، ومساندتك في اختيار وتنفيذ الحلول البرمجية الأنسب لطبيعة نشاطك.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="compatibility-box">
+        <h2 style="margin-bottom: 20px; color: var(--text-main);">الالتزام المهني تجاه العملاء</h2>
+        <div class="comp-grid">
+            <div class="comp-item"><strong>الموثوقية</strong><span>نركز على بناء حلول برمجية مستقرة وقابلة للاعتماد عليها طويلاً.</span></div>
+            <div class="comp-item"><strong>الوضوح</strong><span>نلتزم بالشفافية المطلقة حول قدرات الأنظمة وحدودها الفنية.</span></div>
+            <div class="comp-item"><strong>الدعم</strong><span>نوفر قنوات تواصل مستمرة للمساندة الفنية ومعالجة الطوارئ.</span></div>
+        </div>
+    </div>
+
+    <div class="cta-container">
+        <h3 style="color: var(--text-main); margin-bottom: 20px;">مناقشة متطلبات مشروعك</h3>
+        <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 30px auto;">تواصل معي لمراجعة احتياجاتك البرمجية واستكشاف كيف يمكن للتكنولوجيا دعم أهداف عملك بفعالية.</p>
+        <a href="https://wa.me/21622490771" class="btn-contact">
+            <span>تواصل عبر واتساب للتفاصيل</span>
+        </a>
+        
+        <div class="disclaimer">
+            ملاحظة: كافة الحلول البرمجية يتم تطويرها ومراجعتها بناءً على معايير محددة، ويخضع أداؤها النهائي لظروف بيئة التشغيل والمتطلبات التقنية الخاصة بكل مشروع.
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 أحمد حمدي — تطوير أتمتة الأعمال</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; color: #555;">Sfax, Tunisia</p>
+    </footer>
+
+</body>
+</html>
