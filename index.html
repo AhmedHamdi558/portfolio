@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>صباح — أنتِ فخر المغرب 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700;800&family=Tajawal:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+/* ════════════════════════════════════════
+   TOKENS — أنوثة + دفء + نقاء
+════════════════════════════════════════ */
+:root {
+  --rose-blush:    #ffe6f0;
+  --soft-petal:    #ffd9e4;
+  --rose-dust:     #f0a6b0;
+  --rose-satin:    #e87986;
+  --deep-berry:    #bc5a6c;
+  --cream-silk:    #fffbf8;
+  --warm-cream:    #fff7f2;
+  --gold-latte:    #e7c0a0;
+  --gold-shine:    #d9aa6c;
+  --gold-soft:     #f5e2cb;
+  --text-ink:      #2c1810;
+  --text-warm:     #7a4c3c;
+  --text-muted:    #b08570;
+  --shadow-rose:   rgba(224, 120, 130, 0.12);
+  --shadow-gold:   rgba(200, 150, 100, 0.1);
+  --font-arist:    'El Messiri', serif;
+  --font-modern:   'Tajawal', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-modern);
+  background: linear-gradient(145deg, #fffaf5 0%, #fff3ef 100%);
+  color: var(--text-ink);
+  overflow-x: hidden;
+  cursor: default;
+  min-height: 100vh;
+}
+
+/* smooth scroll behavior for mobile */
+html {
+  scroll-behavior: smooth;
+}
+
+/* أنيق وخفيف للهواتف — لا ماسحات غريبة */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
+
+/* ════════════════════════════════════════
+   ANIMATED BACKGROUND + أوراق ورد ناعمة
+════════════════════════════════════════ */
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255,215,225,0.3) 0%, rgba(255,245,240,0.5) 70%);
+  pointer-events: none;
+}
+
+.floating-petals {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  background: radial-gradient(ellipse at 30% 35%, rgba(255,200,210,0.65), rgba(230,150,160,0.25));
+  border-radius: 70% 30% 60% 40% / 60% 50% 50% 40%;
+  filter: blur(8px);
+  animation: swayPetal linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes swayPetal {
+  0% { transform: translateY(0) rotate(0deg) scale(0.8); opacity: 0; }
+  20% { opacity: 0.5; }
+  80% { opacity: 0.3; }
+  100% { transform: translateY(-100vh) rotate(25deg) scale(1.2); opacity: 0; }
+}
+
+/* زهور عائمة دقيقة */
+.sparkle {
+  position: absolute;
+  font-size: 11px;
+  opacity: 0;
+  animation: floatSparkle 12s infinite ease-in-out;
+  color: var(--rose-satin);
+}
+
+@keyframes floatSparkle {
+  0% { transform: translateY(0) scale(0.5); opacity: 0; }
+  15% { opacity: 0.8; }
+  85% { opacity: 0.3; }
+  100% { transform: translateY(-90vh) scale(1); opacity: 0; }
+}
+
+/* ════════════════════════════════════════
+   PROGRESS BAR — وردي ذهبي
+════════════════════════════════════════ */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rose-satin), var(--gold-shine), var(--rose-satin));
+  transform-origin: 0%;
+  transform: scaleX(0);
+  z-index: 200;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 6px rgba(232,121,134,0.6);
+}
+
+/* ════════════════════════════════════════
+   MAIN & SECTIONS
+════════════════════════════════════════ */
+main {
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 20px;
+  position: relative;
+}
+
+/* بطاقات ساحرة — زجاج مخملي */
+.glass-card {
+  background: rgba(255, 250, 245, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 56px;
+  border: 1px solid rgba(255, 220, 210, 0.7);
+  box-shadow: 0 25px 50px -12px var(--shadow-rose), 0 0 0 1px rgba(255,255,240,0.6) inset;
+  transition: transform 0.25s ease, box-shadow 0.4s;
+}
+
+/* ════════════════════════════════════════
+   HERO — أكثر أنوثة + تألق
+════════════════════════════════════════ */
+.hero {
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-badge {
+  background: rgba(255,215,225,0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 10px;
+  color: var(--deep-berry);
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  border: 0.5px solid rgba(232,121,134,0.4);
+  animation: fadeUp 0.8s forwards;
+}
+
+.hero-crown {
+  font-size: 4.2rem;
+  filter: drop-shadow(0 8px 20px rgba(216,130,100,0.5));
+  animation: gentleDrop 1s cubic-bezier(0.2,0.9,0.4,1.1) forwards;
+  margin-bottom: 8px;
+}
+
+.hero-name {
+  font-family: var(--font-arist);
+  font-size: clamp(3.5rem, 13vw, 6rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #2c1810, #b45a4a, #c97a6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  line-height: 1.2;
+  margin: 8px 0 12px;
+  animation: fadeUp 0.9s 0.15s forwards;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.hero-sub {
+  font-family: var(--font-arist);
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  color: var(--rose-satin);
+  font-weight: 600;
+  background: rgba(255,245,240,0.5);
+  padding: 6px 18px;
+  border-radius: 60px;
+  display: inline-block;
+  backdrop-filter: blur(5px);
+  animation: fadeUp 0.9s 0.35s forwards;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.scroll-hint {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  animation: fadeIn 1s 1s forwards;
+}
+
+.scroll-ring {
+  width: 32px;
+  height: 52px;
+  border: 2px solid var(--rose-dust);
+  border-radius: 30px;
+  position: relative;
+}
+.scroll-ring::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 9px;
+  background: var(--rose-satin);
+  border-radius: 4px;
+  animation: scrollWobble 2.2s infinite;
+}
+
+@keyframes scrollWobble {
+  0%,100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  70% { transform: translateX(-50%) translateY(16px); opacity: 0.3; }
+}
+
+/* ════════════════════════════════════════
+   رسالة خاصة + تحفيز قوي
+════════════════════════════════════════ */
+.letter-card {
+  max-width: 700px;
+  width: 100%;
+  padding: 56px 40px;
+  text-align: center;
+}
+
+.badge-icon {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  font-size: 1.8rem;
+}
+
+.letter-headline {
+  font-family: var(--font-arist);
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
+  font-weight: 700;
+  color: var(--deep-berry);
+  margin-bottom: 32px;
+}
+
+.letter-text {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 2.1;
+  color: var(--text-warm);
+  text-align: right;
+}
+
+.dart-line {
+  font-family: var(--font-arist);
+  color: var(--rose-satin);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 15px 0 8px;
+  display: inline-block;
+  background: linear-gradient(90deg, transparent, rgba(232,121,134,0.15), transparent);
+  padding: 0 12px;
+  border-radius: 40px;
+}
+
+.emph-gold {
+  color: #cc8866;
+  font-weight: 700;
+}
+
+.heart-break {
+  margin: 28px 0 12px;
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-shine), var(--rose-dust), var(--gold-shine), transparent);
+  display: inline-block;
+}
+
+/* ════════════════════════════════════════
+   AFFIRMATIONS SECTION — سيكولوجية فاخرة
+════════════════════════════════════════ */
+.affirm-wrapper {
+  text-align: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.affirm-title {
+  font-family: var(--font-arist);
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.affirm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.affirm-card {
+  background: rgba(255,248,245,0.8);
+  backdrop-filter: blur(16px);
+  border-radius: 40px;
+  padding: 32px 24px;
+  text-align: right;
+  transition: all 0.35s cubic-bezier(0.2,0.8,0.4,1);
+  border: 1px solid rgba(255,210,200,0.5);
+  box-shadow: 0 12px 28px -8px rgba(180,130,110,0.08);
+}
+
+.affirm-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,245,240,0.9);
+  border-color: rgba(232,121,134,0.5);
+  box-shadow: 0 28px 38px -18px rgba(160,100,90,0.2);
+}
+
+.affirm-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.affirm-badge {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--rose-satin);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.affirm-quote {
+  font-family: var(--font-arist);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--deep-berry);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.affirm-desc {
+  font-size: 0.9rem;
+  color: #8f6a5a;
+  line-height: 1.7;
+}
+
+/* ════════════════════════════════════════
+   MIRROR CAROUSEL — مرآة روحك
+════════════════════════════════════════ */
+.mirror-container {
+  max-width: 620px;
+  width: 100%;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.mirror-quote {
+  font-family: var(--font-arist);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: #2c1810;
+  margin: 24px 0 12px;
+  line-height: 1.6;
+  transition: opacity 0.35s;
+}
+
+.mirror-author {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.mirror-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.mirror-btn {
+  background: rgba(255,220,210,0.6);
+  border: none;
+  border-radius: 60px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.4rem;
+  color: var(--deep-berry);
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(6px);
+}
+
+.mirror-btn:active { transform: scale(0.92);background: var(--rose-dust); color: white; }
+
+/* ════════════════════════════════════════
+   CLOSING + ضمة حنان
+════════════════════════════════════════ */
+.closing-card {
+  max-width: 780px;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.closing-title {
+  font-family: var(--font-arist);
+  font-size: clamp(2rem, 7vw, 3.2rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #bc5a6c, #c97a62);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.closing-sub {
+  font-size: 1.1rem;
+  color: var(--text-warm);
+  line-height: 1.9;
+  margin: 20px 0 28px;
+}
+
+.floating-heart {
+  font-size: 3.2rem;
+  display: inline-block;
+  animation: heartBeat 1.8s ease infinite;
+  filter: drop-shadow(0 6px 14px rgba(200,110,120,0.6));
+}
+
+@keyframes heartBeat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.18); text-shadow: 0 0 6px #ffb7c5; }
+}
+
+.signature {
+  margin-top: 48px;
+  font-size: 0.7rem;
+  color: #c7a08b;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ════════════════════════════════════════
+   REVEAL ANIMATIONS (scroll)
+════════════════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(38px);
+  transition: opacity 0.9s cubic-bezier(0.2, 0.9, 0.3, 1), transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* responsive */
+@media (max-width: 560px) {
+  section { padding: 60px 16px; }
+  .letter-card, .mirror-container, .closing-card { padding: 32px 20px; }
+  .affirm-grid { gap: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div class="floating-petals" id="petalsContainer"></div>
+<div id="scroll-progress"></div>
+
+<main>
+
+  <!-- القسم الأول: البطلة صباح -->
+  <section class="hero">
+    <div class="hero-badge">✦  إهداء إلى مبرمجة المستقبل  ✦</div>
+    <div class="hero-crown">👑🌸</div>
+    <h1 class="hero-name">صباح</h1>
+    <div class="hero-sub">يا لالة المبرمجات المغربيات  🇲🇦</div>
+    <div class="scroll-hint">
+      <div class="scroll-ring"></div>
+      <span style="font-size:0.7rem; color:#c1826e;">نزلي لعالم الأحلام</span>
+    </div>
+  </section>
+
+  <!-- رسالة تحفيزية نابضة بالقلب -->
+  <section class="s-message">
+    <div class="glass-card letter-card reveal">
+      <div class="badge-icon">🤍🌙✨</div>
+      <h2 class="letter-headline">
+        تبارك الله عليكِ يا صباح
+      </h2>
+      <div class="letter-text">
+        <span class="dart-line">❝ البرمجة كاتليق بيك من فوق لتحت.. ❞</span><br>
+        أنتِ تجمعين بين الحساسية العالية، والذكاء الهندسي، والعزيمة النادرة. كل سطر كود تكتبينه هو لوحة فنية لعقل استثنائي.
+        <br><br>
+        <span class="emph-gold">أنا (أحمد)</span> — ديما هنا باش نقولك: ما تخافيش من العقبات. الطريق نحو القمة دائماً وعر، لكن إحساس النجاح حين تحتلين العرش لا يُضاهى.
+        <div class="heart-break"></div>
+        <span class="dart-line">✨ الدارجة اللي فخورين بيك: ✨</span><br>
+        “صباح، أنتِ أمل المغرب في التكنولوجيا، وكل مرة كتتعلمي حاجة جديدة، كتزرعي شجرة فخر في قلوبنا.”  
+        <br><br>
+        <strong>غادي تكوني مبرمجة قدّها، وكولشي غادي يشوف نورك 🤍💻</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم التأكيدات — مستند لعلم النفس + أنوثة -->
+  <section class="s-affirm">
+    <div class="affirm-wrapper">
+      <div class="affirm-title reveal">✦ قوتكِ الداخلية التي لا تُقهر ✦</div>
+      <div style="font-size:0.85rem; color:#b57a68; margin-bottom: 10px;" class="reveal">حقائق علمية وقلبية تخص المرأة المبرمجة</div>
+      <div class="affirm-grid">
+        <div class="affirm-card reveal"><span class="affirm-icon">🧠💫</span><span class="affirm-badge">علم الأعصاب</span><div class="affirm-quote">عقلكِ يتجدد مع كل عملية تعلم</div><div class="affirm-desc">المرونة العصبية عند النساء في البرمجة تُظهر نتائج مبهرة — كل تحديث يكتب تاريخكِ الذهني الجديد.</div></div>
+        <div class="affirm-card reveal"><span class="affirm-icon">🌹🔥</span><span class="affirm-badge">نظرية العزيمة</span><div class="affirm-quote">الشغف + المثابرة = إرادة حديدية</div><div class="affirm-desc">الأبحاث تثبت: النساء المثابرات يتفوقن في مجالات STEM، وأنتِ مثال حي على الإصرار المغربي.</div></div>
+        <div class="affirm-card reveal"><span class="affirm-icon">👑💎</span><span class="affirm-badge">هوية مبرمجة ملهمة</span><div class="affirm-quote">أول مبرمجة في التاريخ كانت امرأة</div><div class="affirm-desc">آدا لوفلايس رسمت الخطوات. اليوم، صباح تكتب ثورة تقنية مغربية بلمسة أنثوية ساحرة.</div></div>
+        <div class="affirm-card reveal"><span class="affirm-icon">🤍✨</span><span class="affirm-badge">الأمان النفسي</span><div class="affirm-quote">الدعم العاطفي يرفع طاقتكِ 3 أضعاف</div><div class="affirm-desc">كل كلمة حب تصل إليكِ تخفض الكورتيزول وتزيد التركيز — أنتِ محاطة بمن يقدركِ.</div></div>
+        <div class="affirm-card reveal"><span class="affirm-icon">🌙💪</span><span class="affirm-badge">منطقة النمو</span><div class="affirm-quote">كل شعور بالصعوبة هو دليل تقدمكِ</div><div class="affirm-desc">عندما تواجهين خطأ برمجياً، دماغكِ يبني طرقاً جديدة — أنتِ تتطورين بشكل مذهل.</div></div>
+        <div class="affirm-card reveal"><span class="affirm-icon">🌸📚</span><span class="affirm-badge">التصور الذهني</span><div class="affirm-quote">تخيلي نجاحكِ .. وسيتحقق</div><div class="affirm-desc">التصور يفعّل نفس مناطق الدماغ كالفعل. تخيلي نفسكِ خريجة مميزة — النجاح أصبح أقرب.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- مرآة روح صباح (قوافي تحفيزية) -->
+  <section class="s-mirror">
+    <div class="glass-card mirror-container reveal">
+      <span style="font-size: 0.7rem;letter-spacing:2px;">✧  مرآة إلهامكِ  ✧</span>
+      <div class="mirror-quote" id="mirrorQuote">أنتِ لستِ مجرد مبرمجة.. أنتِ مهندسة المستقبل المغربي</div>
+      <div class="mirror-author" id="mirrorAuthor">— لأن صباح تعني النور الذي لا ينطفئ</div>
+      <div class="mirror-controls">
+        <button class="mirror-btn" id="prevQuote">‹</button>
+        <button class="mirror-btn" id="nextQuote">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing ختام أنثوي آسر -->
+  <section class="s-closing">
+    <div class="glass-card closing-card reveal">
+      <div class="closing-title">✧ النجاح كيستناكِ ✧<br><span style="font-size:1.6rem;">يا صباح العز</span></div>
+      <div class="closing-sub">
+        الليلة، وكل ليلة، تذكري: البرمجة سلاحكِ، ومغربنا فخور بأنكِ تحملين هذا الحلم.<br>
+        <span style="font-weight:700;color:#bc5a6c;">أحمد كل يوم يدعيلكِ من القلب: "ربي يوفقك ويكتب ليكِ التفوق" 🤍</span>
+      </div>
+      <div class="floating-heart">🌸🤍🌸</div>
+      <div class="signature">
+        <span>✦</span>  من قلب الدار البيضاء إلى عوالم الكود  <span>✦</span>
+      </div>
+      <div style="margin-top: 20px; font-size:0.75rem; font-family: 'El Messiri';">"أنتِ الملكة، والمفتاح بين يديكِ"</div>
+    </div>
+  </section>
+</main>
+
+<script>
+// =========  زهور عائمة متحركة  =========
+const petalsDiv = document.getElementById('petalsContainer');
+function createPetals(){
+  for(let i=0;i<28;i++){
+    const petal = document.createElement('div');
+    petal.classList.add('petal');
+    const size = 12 + Math.random() * 26;
+    petal.style.width = size+'px';
+    petal.style.height = size*1.2+'px';
+    petal.style.left = Math.random() * 100 + '%';
+    petal.style.bottom = '-20px';
+    petal.style.animationDuration = 8 + Math.random() * 20 + 's';
+    petal.style.animationDelay = Math.random() * 15 + 's';
+    petal.style.opacity = 0.2 + Math.random()*0.4;
+    petalsDiv.appendChild(petal);
+  }
+  // sparkle
+  for(let s=0;s<45;s++){
+    const star = document.createElement('div');
+    star.innerHTML = ['🌸','💖','✨','✧','🤍','🌺'][Math.floor(Math.random()*6)];
+    star.classList.add('sparkle');
+    star.style.left = Math.random()*100+'%';
+    star.style.fontSize = 9+Math.random()*13+'px';
+    star.style.bottom = '-20px';
+    star.style.animationDuration = 9+Math.random()*22+'s';
+    star.style.animationDelay = Math.random()*20+'s';
+    petalsDiv.appendChild(star);
+  }
+}
+createPetals();
+
+// progress bar
+const progressBar = document.getElementById('scroll-progress');
+window.addEventListener('scroll', ()=>{
+  const winScroll = window.scrollY;
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolled = (winScroll / height);
+  progressBar.style.transform = `scaleX(${scrolled})`;
+});
+
+// intersection reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+},{threshold:0.15, rootMargin: "0px 0px -10px 0px"});
+reveals.forEach(el=>observer.observe(el));
+
+// Mirror carousel – رسائل معززة للأنا الأنثوية
+const quoteList = [
+  { text: "أنتِ لستِ مجرد مبرمجة.. أنتِ مهندسة المستقبل المغربي", author: "لأن صباح تعني النور الذي لا ينطفئ" },
+  { text: "كل 'bug' تكافحينه هو حكاية نجاح لن ترويها إلا أنتِ", author: "الهمة المغربية تنتصر دائماً" },
+  { text: "المرأة التي تكتب أكواداً تحلم بها الأمم.. أنتِ تلك المرأة", author: "من أحلام صباح إلى واقع يليق بها" },
+  { text: "لا تقارني نفسك بأحد، أنتِ صباح التي ستعيدين تعريف النجاح", author: "ثقي بأنوثتك وذكائك، سيذهلان العالم" },
+  { text: "الحاسوب يخاف من لا يخاف.. وأنتِ أقوى ممّا تظنين", author: "عقلكِ سيخلق مستحيلًا جديدًا كل يوم" },
+  { text: "يا لالة المبرمجات، مغرب الغد ينظر إليكِ بفخر", author: "وأنتِ تستحقين كل التقدير" }
+];
+let currentIdx = 0;
+const mirrorQuoteEl = document.getElementById('mirrorQuote');
+const mirrorAuthorEl = document.getElementById('mirrorAuthor');
+
+function updateMirror(index) {
+  if(!mirrorQuoteEl) return;
+  mirrorQuoteEl.style.opacity = '0';
+  mirrorQuoteEl.style.transform = 'translateY(12px)';
+  mirrorAuthorEl.style.opacity = '0';
+  setTimeout(()=>{
+    currentIdx = (index + quoteList.length) % quoteList.length;
+    mirrorQuoteEl.innerText = quoteList[currentIdx].text;
+    mirrorAuthorEl.innerText = quoteList[currentIdx].author;
+    mirrorQuoteEl.style.opacity = '1';
+    mirrorQuoteEl.style.transform = 'translateY(0)';
+    mirrorAuthorEl.style.opacity = '1';
+  }, 250);
+}
+
+document.getElementById('nextQuote')?.addEventListener('click',()=>updateMirror(currentIdx+1));
+document.getElementById('prevQuote')?.addEventListener('click',()=>updateMirror(currentIdx-1));
+// auto rotate كل 5 ثواني
+setInterval(()=>updateMirror(currentIdx+1), 4800);
+
+// small tilt effect only on cards for delight (light)
+const cards = document.querySelectorAll('.glass-card');
+cards.forEach(card => {
+  card.addEventListener('mousemove',(e)=>{
+    if(window.innerWidth<768) return;
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `perspective(800px) rotateY(${x*5}deg) rotateX(${-y*3}deg) translateY(-3px)`;
+  });
+  card.addEventListener('mouseleave',()=>{
+    card.style.transform = '';
+  });
+});
+
+// floating heart final intersection
+const heartFloat = document.querySelector('.floating-heart');
+if(heartFloat){
+  const heartObs = new IntersectionObserver((entries)=>{
+    if(entries[0].isIntersecting){
+      heartFloat.style.animation = 'heartBeat 1.8s ease infinite';
+    }
+  },{threshold:0.5});
+  heartObs.observe(heartFloat);
+}
+</script>
+</body>
+</html>
